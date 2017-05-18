@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+
+  <div class="row">
+  <div class="col">
+	<div class="text-center">
+  <h2 style="text-align: center;">Parque do Povo<b> 360 </b></h2></div>
+  </div>
+	</div>
+  
+  </head>
+  <body  class="Sao Joao de Campina Grande">
+  <div id="photosphere" style="height: 500px;"></div>
+  <div class="psv-caption">Parque do Povo</div>
+  <div class="psv-tooltip" style="top: -1000px; left: -1000px;">
+  <div class="psv-tooltip-arrow"></div>
+  <div class="psv-tooltip-content"></div>
+    <!--Caminho da imagem.jpg-->
+  </div><a href="http://lh6.googleusercontent.com/-MSk5EbzY3OY/V77lNMUfp0I/AAAAAAAAA-M/xK-7nrJEaiEcrZio3lY9kgh3ysCpy85ZACLIB/s0/photo.jpg"></a>
+  
+</section>
+<style>
+  .bs-docs-masthead .version {
+    color: inherit;
+  }
+</style>
+<link rel="stylesheet" href="http://photo-sphere-viewer.js.org/dist/Photo-Sphere-Viewer/dist/photo-sphere-viewer.min.css">
+<script src="http://photo-sphere-viewer.js.org/dist/three.js/three.min.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/D.js/lib/D.min.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/doT/doT.min.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/uevent/uevent.min.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/three.js-examples/examples/js/renderers/CanvasRenderer.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/three.js-examples/examples/js/renderers/Projector.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/Photo-Sphere-Viewer/dist/photo-sphere-viewer.min.js"></script>
+
+<script>
+  var PSV = new PhotoSphereViewer({
+    // tipo e imagem(caminho da imagem com formato JPG)
+    panorama: 'http://lh6.googleusercontent.com/-MSk5EbzY3OY/V77lNMUfp0I/AAAAAAAAA-M/xK-7nrJEaiEcrZio3lY9kgh3ysCpy85ZACLIB/s0/photo.jpg',
+    container: 'photosphere',
+    caption: 'Parque do Povo',
+    //icone de carregamento da imagem.gif
+    loading_img: 'https://d13yacurqjgara.cloudfront.net/users/503653/screenshots/3143656/fluid-loader.gif',
+    default_fov: 70,
+    size: {
+      height: 500
+    }
+  });
+
+  console.log(PSV);
+  PSV.navbar.items[5].container.hidden = true;
+  PSV.navbar.items[3].container.hidden = true;
+  PSV.navbar.items[2].container.hidden = true;
+
+</script>
+</body>
+</html>
